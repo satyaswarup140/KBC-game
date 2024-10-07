@@ -1,70 +1,95 @@
-# Getting Started with Create React App
+# KBC-Style Quiz Game with QR Code Integration:
+    This is a KBC-style quiz game where players can participate by scanning a QR code displayed on the main screen. Players submit answers through their mobile devices, and the correct player's name is displayed on the main screen after submitting the correct answer.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Project Setup:
+    1. Clone the Repository
+    To start working on the project, clone this repository to your local machine:
+    - git clone https://github.com/satyaswarup140/KBC-game.git
+    - cd kbc-game
 
-## Available Scripts
+    2. Install Dependencies
+    After cloning the repository, install the necessary dependencies:
+    - npm install
+    This command will install all the required packages defined in package.json.
 
-In the project directory, you can run:
+    3. Start the Development Server
+    Once the dependencies are installed, start the development server:
+    - npm start
+    The app will run on http://localhost:3004/ by default.
 
-### `npm start`
+# Game Flow:
+    1. The main screen displays a quiz question along with a QR code.
+    2. Players scan the QR code using their mobile devices, enter their names, and submit answers.
+    3. If a player selects the correct answer, the main screen shows a congratulations message and displays the player's name.
+    4. The game progresses to the next question until all questions are answered.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Usage:
+    1. Main Screen: This screen is typically shown on a computer and displays the quiz questions and the players' answers.
+    2. Player Screen: This screen appears on a mobile device once the player scans the QR code and allows players to submit their answers.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Answering a Question:
+    1. Players select one answer (A, B, C, or D) for each question.
+    2. After clicking Submit, the correct player is announced on the main screen if their answer is correct.
 
-### `npm test`
+# Features:
+    . Responsive Gameplay: Both mobile devices and the main computer screen interact seamlessly.
+    . QR Code Integration: Players join the game by scanning a QR code with their mobile devices.
+    . Real-Time Feedback: Correct answers are acknowledged, and the game moves to the next question.
+    . Progressive Quiz: Multiple questions are displayed, and players can continue answering until the quiz is      complete.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Technologies Used:
+    > React: For building the user interface and managing game state.
+    > QRCode.react: For generating the QR codes to allow player participation.
+    > JavaScript (ES6+): Core programming language for logic.
+    > HTML5/CSS3: Markup and styling.
 
-### `npm run build`
+# How to Play
+# Step-by-Step:
+    1. Start the game by running the app.
+    2. On the main screen, scan the QR code to join the game from your mobile device.
+    3. Enter your name and submit your answers.
+    4. Players with correct answers will see their names displayed on the main screen.
+    5. The game progresses to the next question once the correct answer is selected.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# License
+    This project is licensed under the MIT License - see the LICENSE file for details.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# KBC-Style Quiz Game: Rules
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Objective:
+    The objective of the game is to answer a series of multiple-choice questions correctly. Each player will participate by submitting their answers via their mobile devices after scanning the QR code. The player who answers a question correctly will have their name displayed on the main screen, and the game will proceed to the next question.
 
-### `npm run eject`
+# How to Play:
+1. Joining the Game:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    On the main screen, a QR code will be displayed.
+    Scan the QR code using your mobile device to join the game.
+    After scanning, enter your name to identify yourself as a player.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Answering Questions:
+    . A multiple-choice question with four answer options (A, B, C, D) will be displayed on both the main screen and your mobile screen.
+    . Select your answer on your mobile screen.
+    . After selecting, click the Submit button to confirm your answer.
+    . Each player can only submit one answer per question.
+3. Answer Feedback:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    . If you answer correctly, your name will be displayed on the main screen along with a congratulatory message.
+    . If your answer is incorrect, your mobile screen will inform you that the answer is wrong.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. Progression:
+    . After the correct answer is submitted, the game will move to the next question.
+    . The game continues until all questions are answered.
+# Winning Conditions:
+    . Players aim to answer as many questions correctly as possible.
+    . For each question, the player who submits the correct answer first is recognized on the main screen.
 
-## Learn More
+# Important Notes:
+    . Only one correct answer is recognized per question.
+    . Players must be quick to answer, as the first correct answer will be highlighted.
+    . Each player can only submit one answer per question.
+    . There is no penalty for wrong answers, but you will not proceed until someone answers correctly.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Game Tips:
+    . Ensure a stable internet connection while playing, especially when submitting answers.
+    . Be quick and decisive in selecting your answer, as only the first correct answer counts.
+    . Read the questions carefully before submitting your answer.

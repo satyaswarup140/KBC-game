@@ -1,8 +1,4 @@
-import React, { useState } from 'react';
-import MainScreen from './components/MainScreen';
-
-const App = () => {
-  const questions = [
+const questions = [
     {
       question: 'Which planet is known as the Red Planet?',
       options: ['A. Earth', 'B. Mars', 'C. Jupiter', 'D. Venus'],
@@ -29,28 +25,3 @@ const App = () => {
       correctAnswer: "B. Leonardo da Vinci"
       }
   ];
-
-  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-
-  const handleNextQuestion = () => {
-    if (currentQuestionIndex < questions.length - 1) {
-      setCurrentQuestionIndex(currentQuestionIndex + 1);
-    } else {
-      alert('Game over! You have answered all questions.');
-    }
-  };
-
-  const currentQuestion = questions[currentQuestionIndex];
-
-  return (
-    <MainScreen
-      gameURL={'/path-to-your-qr-code.png'}
-      question={currentQuestion.question}
-      options={currentQuestion.options}
-      correctAnswer={currentQuestion.correctAnswer}
-      handleNextQuestion={handleNextQuestion}
-    />
-  );
-};
-
-export default App;
